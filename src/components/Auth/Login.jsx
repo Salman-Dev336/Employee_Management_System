@@ -15,7 +15,7 @@ const Login = () => {
   };
   return (
     <div className="flex items-center justify-center w-screen h-screen">
-      <div className="border-2 border-green-700 p-20 rounded-lg top-1/2 left-1/2 ">
+      <div className="border-2 border-green-500 p-20 rounded-3xl top-1/2 left-1/2 ">
         <form
           onSubmit={(e) => {
             submitHandler(e);
@@ -29,7 +29,7 @@ const Login = () => {
               setemail(e.target.value);
             }}
             required
-            className="border-2 border-green-700 rounded-full py-2 px-10 text-medium"
+            className="border-2 border-green-500 rounded-2xl py-2 px-10 text-medium"
             type="email"
             placeholder="email"
           />
@@ -39,11 +39,11 @@ const Login = () => {
               setpassword(e.target.password);
             }}
             required
-            className="border-2 border-green-700 rounded-full py-2 px-10 text-medium mt-3"
+            className="border-2 border-green-500 rounded-2xl py-2 px-10 text-medium mt-3"
             type="password"
             placeholder="password"
           />
-          <button className="border-2 border-green-700 rounded py-2 px-24 hover:bg-purple-800 text-medium mt-10 bg-purple-600 cursor-pointer active:scale-95">
+          <button className="border-2 border-green-500 rounded-lg py-2 px-24 font-bold hover:bg-purple-800 text-medium mt-10 bg-purple-600 cursor-pointer active:scale-95">
             Login
           </button>
         </form>
