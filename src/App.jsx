@@ -10,19 +10,33 @@ import { AuthContext } from "./context/Auth_Provider";
 
 const App = () => {
   const [user, setuser] = useState(null);
+  const authdata = useContext(AuthContext);
+
+  useEffect(() => {
+    if (authdata) {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if(loggedInUser){
+        setuser(loggedInUser.role);
+      }
+    }
+  }, [authdata]);
 
   const handleLogin = (email, password) => {
     if (email === "admin@example.com" && password === "123") {
       setuser("admin");
-    } else if (email === "employee@example.com" && password === "123") {
+      localStorage.setItem("loggedInUser", JSON.stringify({ role: "admin" }));
+    } else if (
+      authdata &&
+      authdata.employees.find(
+        (e) => email === e.email && password === e.password,
+      )
+    ) {
       setuser("employee");
+      localStorage.setItem("loggedInUser", JSON.stringify({ role: "employee" }));
     } else {
       alert("invalid Credentials ");
     }
   };
-
-  const data = useContext(AuthContext);
-  console.log(data);
 
   // handleLogin("admin@example.com", "123");
 
