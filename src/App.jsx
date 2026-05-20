@@ -5,6 +5,8 @@ import Admin_Dashboard from "./components/Dashboard/Admin_Dashboard";
 import { useEffect } from "react";
 import { getLocalStorage, setLocalStorage } from "./utils/LocalStorage";
 import { useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "./context/Auth_Provider";
 
 const App = () => {
   const [user, setuser] = useState(null);
@@ -12,14 +14,15 @@ const App = () => {
   const handleLogin = (email, password) => {
     if (email === "admin@example.com" && password === "123") {
       setuser("admin");
-      console.log(user);
     } else if (email === "employee@example.com" && password === "123") {
       setuser("employee");
-      console.log(user);
     } else {
       alert("invalid Credentials ");
     }
   };
+
+  const data = useContext(AuthContext);
+  console.log(data);
 
   // handleLogin("admin@example.com", "123");
 
