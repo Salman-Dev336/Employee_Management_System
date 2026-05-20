@@ -32,6 +32,7 @@ const App = () => {
       );
       if (employee) {
         setuser("employee");
+        setloggedInUserdata(employee)
         localStorage.setItem(
           "loggedInUser",
           JSON.stringify({ role: "employee" }),
@@ -48,7 +49,7 @@ const App = () => {
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ""}
       {user === "admin" ? <Admin_Dashboard /> : ""}
-      {user === "employee" ? <Employee_Dashboard /> : ""}
+      {user === "employee" ? <Employee_Dashboard data={loggedInUserdata} /> : ""}
       {/* < Employee_Dashboard /> */}
       {/* < Admin_Dashboard /> */}
     </>

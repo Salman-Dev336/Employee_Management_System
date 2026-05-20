@@ -1,6 +1,7 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({data}) => {
+  
   return (
     <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl px-8 py-5 shadow-xl">
       {/* Left Side */}
@@ -8,7 +9,7 @@ const Header = () => {
         <h2 className="text-gray-300 text-lg font-medium">Welcome Back,</h2>
 
         <h1 className="text-4xl font-extrabold bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 bg-clip-text text-transparent mt-1">
-          Salman Khan 👋
+          {data.firstName}
         </h1>
 
         <p className="text-gray-400 text-sm mt-2 tracking-wide">
