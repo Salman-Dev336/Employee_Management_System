@@ -6,9 +6,9 @@ import { useEffect } from "react";
 
 export const AuthContext = createContext()
 const Auth_Provider = ({ children }) => {
+  // localStorage.clear()
 
 
-  localStorage.clear()
   const [userdata, setuserdata] = useState(null)
 
   useEffect(() => {

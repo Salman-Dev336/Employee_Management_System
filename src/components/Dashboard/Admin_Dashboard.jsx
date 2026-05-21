@@ -5,7 +5,7 @@ import All_Task from "../others/All_Task";
 
 const Admin_Dashboard = () => {
     return (
-        <div className="h-screen w-full p-10 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]">
+        <div className="h-full flex flex-col justify-between w-full p-10 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]">
             <Header />
             < CreateTask />
             < All_Task />

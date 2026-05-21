@@ -2,7 +2,7 @@ import React from "react";
 
 const All_Task = () => {
   return (
-    <div className="bg-white/10 backdrop-blur-lg border border-white/10 shadow-2xl p-6 mt-6 rounded-3xl h-72 overflow-auto">
+    <div className=" bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] backdrop-blur-lg border border-white/10 shadow-2xl p-6 mt-6 rounded-3xl h-72 overflow-auto">
 
       {/* Task Card */}
       <div className="bg-gradient-to-r from-purple-600 to-indigo-600 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">

@@ -2,7 +2,7 @@ import React from "react";
 
 const CreateTask = () => {
   return (
-    <div className="p-8 bg-white/10 backdrop-blur-lg border border-white/10 shadow-2xl mt-7 rounded-3xl">
+    <div className="p-8 bg-white/10 backdrop-blur-lg border border-white/10 shadow-2xl mt-7 rounded-3xl ">
 
       {/* Heading */}
       <div className="mb-8">
