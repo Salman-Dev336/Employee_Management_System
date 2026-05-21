@@ -8,9 +8,9 @@ const employees = [
 
     taskNumbers: {
       active: 1,
-      newTask: 1,
+      newTask: 0,
       completed: 1,
-      failed: 0,
+      failed: 1,
     },
 
     tasks: [
@@ -23,6 +23,16 @@ const employees = [
         taskDescription: "Create a responsive landing page UI.",
         taskDate: "2026-05-25",
         taskCategory: "Design",
+      },
+       {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Database Setup",
+        taskDescription: "Configure MongoDB database.",
+        taskDate: "2026-05-19",
+        taskCategory: "Database",
       },
       {
         active: false,
@@ -71,6 +81,16 @@ const employees = [
         taskDate: "2026-05-24",
         taskCategory: "Frontend",
       },
+       {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Database Setup",
+        taskDescription: "Configure MongoDB database.",
+        taskDate: "2026-05-19",
+        taskCategory: "Database",
+      },
       {
         active: false,
         newTask: false,
@@ -117,6 +137,16 @@ const employees = [
         taskDescription: "Configure MongoDB database.",
         taskDate: "2026-05-19",
         taskCategory: "Database",
+      },
+      {
+        active: false,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Dark Mode",
+        taskDescription: "Implement dark mode feature.",
+        taskDate: "2026-05-19",
+        taskCategory: "UI/UX",
       },
       {
         active: true,
@@ -175,6 +205,16 @@ const employees = [
         taskDate: "2026-05-17",
         taskCategory: "Debugging",
       },
+       {
+        active: false,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Database Setup",
+        taskDescription: "Configure MongoDB database.",
+        taskDate: "2026-05-19",
+        taskCategory: "Database",
+      },
       {
         active: true,
         newTask: false,
@@ -211,6 +251,16 @@ const employees = [
         taskDescription: "Implement Firebase authentication.",
         taskDate: "2026-05-16",
         taskCategory: "Security",
+      },
+       {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Database Setup",
+        taskDescription: "Configure MongoDB database.",
+        taskDate: "2026-05-19",
+        taskCategory: "Database",
       },
       {
         active: true,
