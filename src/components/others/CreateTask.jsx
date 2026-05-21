@@ -2,19 +2,19 @@ import React from "react";
 
 const CreateTask = () => {
   return (
-    <div className="p-8 bg-white/10 backdrop-blur-lg border border-white/10 shadow-2xl mt-7 rounded-3xl ">
+    <div className="p-8 bg-white/10 backdrop-blur-lg border border-white/10 shadow-2xl mt-2 rounded-3xl ">
 
       {/* Heading */}
-      <div className="mb-8">
-        <h1 className="text-4xl font-extrabold bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 bg-clip-text text-transparent">
+      <div className="mb-2">
+        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 bg-clip-text text-transparent">
           Create New Task
         </h1>
 
-        <p className="text-gray-400 mt-2 tracking-wide">
+        <p className="text-gray-400 mt-1 tracking-wide">
           Assign and manage tasks easily ✨
         </p>
 
-        <div className="w-28 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-4"></div>
+        <div className="w-28 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-2"></div>
       </div>
 
       <form className="flex w-full flex-wrap items-start justify-between">
@@ -28,7 +28,7 @@ const CreateTask = () => {
             </h2>
 
             <input
-              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-5"
+              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-2"
               type="text"
               placeholder="Make a UI Design"
             />
@@ -40,7 +40,7 @@ const CreateTask = () => {
             </h3>
 
             <input
-              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-5"
+              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-2"
               type="date"
             />
           </div>
@@ -51,7 +51,7 @@ const CreateTask = () => {
             </h3>
 
             <input
-              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-5"
+              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-2"
               type="text"
               placeholder="Employee Name"
             />
@@ -63,7 +63,7 @@ const CreateTask = () => {
             </h3>
 
             <input
-              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-5"
+              className="text-sm py-3 px-4 w-4/5 rounded-2xl bg-white/5 border border-gray-500 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all mb-2"
               type="text"
               placeholder="Design, Dev, Deploy..."
             />

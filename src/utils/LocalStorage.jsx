@@ -8,7 +8,7 @@ const employees = [
 
     taskNumbers: {
       active: 1,
-      newTask: 0,
+      newTask: 1,
       completed: 1,
       failed: 1,
     },
@@ -36,8 +36,8 @@ const employees = [
       },
       {
         active: false,
-        newTask: false,
-        completed: true,
+        newTask: true,
+        completed: false,
         failed: false,
         taskTitle: "Fix Navbar",
         taskDescription: "Resolve responsive navbar issues.",

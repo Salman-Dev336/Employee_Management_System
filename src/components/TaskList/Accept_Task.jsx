@@ -11,11 +11,11 @@ const Accept_Task = ({data}) => {
         <p className="text-sm   mt-5">
          {data.taskDescription}
         </p>
-        <div className='flex justify-end gap-2 mt-10 '>
-            <button className='bg-green-700 cursor-pointer w-1/2 border-2 border-gray-300 active:scale-95 py-1 px-2 text-sm p-2 rounded-xl'>
+        <div className='flex justify-end gap-2 mt-20 '>
+            <button className='bg-green-700 cursor-pointer w-1/2 border-2 border-gray-300 active:scale-95 py-2 px-2 text-sm p-2 rounded-xl'>
                 Complete
             </button>
-             <button className='bg-red-700 cursor-pointer w-1/2 border-2 border-gray-200 active:scale-95 py-1 px-2 text-sm p-2 rounded-xl '>
+             <button className='bg-red-700 cursor-pointer w-1/2 border-2 border-gray-200 active:scale-95 py-2 px-2 text-sm p-2 rounded-xl '>
                 Failed
             </button>
         </div>

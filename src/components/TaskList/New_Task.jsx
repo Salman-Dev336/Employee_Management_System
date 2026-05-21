@@ -11,8 +11,8 @@ const New_Task = ({data}) => {
       <p className="text-sm   mt-5">
         {data.taskDescription}
       </p>
-      <div className="mt-10 justify-end flex">
-        <button className="bg-green-700 cursor-pointer w-full border-2 border-gray-300 active:scale-95 py-1 px-2 text-sm p-2 rounded-xl">
+      <div className="mt-20 justify-end flex">
+        <button className="bg-green-700 cursor-pointer w-full border-2 border-gray-300 active:scale-95 py-2 px-2 text-sm p-2 rounded-xl">
           Accept Task
         </button>
       </div>

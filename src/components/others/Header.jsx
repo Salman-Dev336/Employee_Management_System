@@ -18,16 +18,16 @@ const Header = () => {
 
 
   return (
-    <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl px-8 py-5 shadow-xl">
+    <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl px-8 py-3 shadow-xl">
       {/* Left Side */}
       <div>
         <h2 className="text-gray-300 text-lg font-medium">Welcome Back,</h2>
 
-        <h1 className="text-4xl font-extrabold bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 bg-clip-text text-transparent mt-1">
-          salman khan
+        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 bg-clip-text text-transparent mt-1">
+          Salman
         </h1>
 
-        <p className="text-gray-400 text-sm mt-2 tracking-wide">
+        <p className="text-gray-400 text-sm mt-1 tracking-wide">
           Hope you’re having a productive day ✨
         </p>
       </div>
