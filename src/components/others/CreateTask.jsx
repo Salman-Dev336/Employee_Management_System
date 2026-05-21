@@ -2,7 +2,7 @@ import React from "react";
 
 const CreateTask = () => {
   return (
-    <div className="p-8 bg-white/10 backdrop-blur-lg border border-white/10 shadow-2xl mt-2 rounded-3xl ">
+    <div className="p-8 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]backdrop-blur-lg border border-white/10 shadow-2xl mt-2 rounded-3xl ">
 
       {/* Heading */}
       <div className="mb-2">
@@ -84,7 +84,7 @@ const CreateTask = () => {
             placeholder="Write task details here..."
           ></textarea>
 
-          <button className="bg-gradient-to-r from-emerald-500 to-green-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 py-4 px-5 rounded-2xl text-sm font-bold mt-5 w-full active:scale-95">
+          <button className="bg-gradient-to-r from-emerald-600 to-green-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 py-4 px-5 rounded-2xl text-sm font-bold mt-5 w-full active:scale-95">
             Create Task
           </button>
 

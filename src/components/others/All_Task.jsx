@@ -1,70 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../context/Auth_Provider";
 
 const All_Task = () => {
+  const authData = useContext(AuthContext);
+
   return (
-    <div className=" bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] backdrop-blur-lg border border-white/10 shadow-2xl p-6 mt-6 rounded-3xl h-72 overflow-auto">
-
-      {/* Task Card */}
-      <div className="bg-gradient-to-r from-purple-600 to-indigo-600 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">
-        <h2 className="text-white font-bold text-lg">Salman Khan</h2>
-        <h3 className="text-purple-100 font-medium">
-          Make a UI Design
+    <div className=" bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] backdrop-blur-lg border border-white/10 shadow-2xl  mt-2 rounded-3xl h-72 ">
+      <div className="bg-gradient-to-r from-purple-900 to-indigo-900 py-4 px-6 flex justify-between items-center rounded-2xl ">
+        <h2 className="bg-amber-600 px-4 py-1 rounded-full text-sm font-semibold text-white">
+          Employee Name
+        </h2>
+        <h3 className=" bg-blue-600 px-4 py-1 rounded-full text-sm font-semibold text-white">
+          New Task
         </h3>
-        <h5 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
-          New
+        <h3 className="bg-purple-600 px-4 py-1 rounded-full text-sm font-semibold text-white">
+          Active Task
+        </h3>
+        <h3 className="bg-green-600 px-4 py-1 rounded-full text-sm font-semibold text-white">
+          Completed Task
+        </h3>
+
+        <h5 className="bg-red-600 px-4 py-1 rounded-full text-sm font-semibold text-white">
+          failed
         </h5>
       </div>
 
-      <div className="bg-gradient-to-r from-emerald-500 to-green-700 mt-4 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">
-        <h2 className="text-white font-bold text-lg">Salman Khan</h2>
-        <h3 className="text-green-100 font-medium">
-          Make a UI Design
-        </h3>
-        <h5 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
-          Completed
-        </h5>
-      </div>
-
-      <div className="bg-gradient-to-r from-yellow-400 to-orange-500 mt-4 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">
-        <h2 className="text-white font-bold text-lg">Salman Khan</h2>
-        <h3 className="text-yellow-100 font-medium">
-          Make a UI Design
-        </h3>
-        <h5 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
-          Pending
-        </h5>
-      </div>
-
-      <div className="bg-gradient-to-r from-rose-500 to-red-700 mt-4 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">
-        <h2 className="text-white font-bold text-lg">Salman Khan</h2>
-        <h3 className="text-red-100 font-medium">
-          Make a UI Design
-        </h3>
-        <h5 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
-          Failed
-        </h5>
-      </div>
-
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-700 mt-4 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">
-        <h2 className="text-white font-bold text-lg">Salman Khan</h2>
-        <h3 className="text-cyan-100 font-medium">
-          Make a UI Design
-        </h3>
-        <h5 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
-          Review
-        </h5>
-      </div>
-
-      <div className="bg-gradient-to-r from-pink-500 to-fuchsia-700 mt-4 py-4 px-6 flex justify-between items-center rounded-2xl shadow-lg hover:scale-[1.02] transition-all duration-300">
-        <h2 className="text-white font-bold text-lg">Salman Khan</h2>
-        <h3 className="text-pink-100 font-medium">
-          Make a UI Design
-        </h3>
-        <h5 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
-          Active
-        </h5>
-      </div>
-
+     <div className="h-[80%] overflow-auto">
+       {authData.employees.map(function (e) {
+        return (
+          <div className="bg-gradient-to-r from-purple-900 to-indigo-900  py-4 px-6 mt-2 flex justify-between items-center rounded-2xl  ">
+            <h3 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">
+              {e.firstName}
+            </h3>
+            <h3 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">{e.taskNumbers.newTask}</h3>
+            <h3 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">{e.taskNumbers.active}</h3>
+            <h3 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">{e.taskNumbers.completed}</h3>
+            <h3 className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold text-white">{e.taskNumbers.failed}</h3>
+          </div>
+        );
+      })}
+     </div>
     </div>
   );
 };

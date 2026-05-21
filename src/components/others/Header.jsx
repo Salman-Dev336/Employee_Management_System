@@ -18,7 +18,7 @@ const Header = () => {
 
 
   return (
-    <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl px-8 py-3 shadow-xl">
+    <div className="flex items-center justify-between bg-gradient-to-r from-purple-900 to-indigo-900 backdrop-blur-lg border border-white/20 rounded-3xl px-8 py-3 shadow-xl">
       {/* Left Side */}
       <div>
         <h2 className="text-gray-300 text-lg font-medium">Welcome Back,</h2>
