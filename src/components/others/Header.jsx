@@ -1,7 +1,10 @@
 import React from "react";
 
 const Header = ({data}) => {
+
   
+
+
   return (
     <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl px-8 py-5 shadow-xl">
       {/* Left Side */}
