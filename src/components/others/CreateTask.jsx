@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CreateTask = () => {
+
+
+  const [taskTitle, settasktitle] = useState('')
+  const [taskDate, settaskDate] = useState('')
+  const [assignTo, setassignTo] = useState('')
+  const [category, setcategory] = useState('')
+  const [description, setdescription] = useState('')
+
+
 
   const submitHandler = (e)=>{
     e.preventDefault()
@@ -8,12 +17,6 @@ const CreateTask = () => {
     
 
   }
-
-
-
-
-
-
   return (
     <div className="p-8 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]backdrop-blur-lg border border-white/10 shadow-2xl mt-2 rounded-3xl ">
       {/* Heading */}
