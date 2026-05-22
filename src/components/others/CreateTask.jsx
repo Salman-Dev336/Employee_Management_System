@@ -24,19 +24,22 @@ const CreateTask = () => {
     e.preventDefault()
      setNewTask({taskTitle, taskDate, category, description, active:false, newTask:true, failed:false, completed: false})
 
-    const data = JSON.parse(localStorage.getItem('employees'))
-    console.log(userdata.employees);
+    const data = userdata
     
 
     data.forEach(function(e){
 
       if(assignTo == e.firstName){
-       e.tasks.push(newTask)       
+       e.tasks.push(newTask)     
+       e.taskNumbers.newTask = e.taskNumbers.newTask+1  
        
        
       }
     })
 
+    setUserData(data)
+    console.log(data);
+    
     // localStorage.setItem('employees', JSON.stringify(data))
 
 
