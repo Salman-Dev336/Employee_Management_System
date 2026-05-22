@@ -21,7 +21,10 @@ const CreateTask = () => {
     e.preventDefault()
      setTask({taskTitle, taskDate, category, description, active:false, newTask:true, failed:true,completed: false})
 
-  console.log(setTask);
+    const data = localStorage.getItem('employees')
+    console.log(JSON.stringify(data));
+    
+
 
 
     settasktitle('')
