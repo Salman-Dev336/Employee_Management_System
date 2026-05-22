@@ -21,9 +21,15 @@ const CreateTask = () => {
     e.preventDefault()
      setTask({taskTitle, taskDate, category, description, active:false, newTask:true, failed:true,completed: false})
 
-    const data = localStorage.getItem('employees')
-    console.log(JSON.stringify(data));
-    
+    const data = JSON.parse(localStorage.getItem('employees'))
+
+    data.forEach(function(e){
+
+      if(assignTo === e.firstName){
+        console.log('yahi hai wo');
+        
+      }
+    })
 
 
 
